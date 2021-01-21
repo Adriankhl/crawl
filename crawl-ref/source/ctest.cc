@@ -83,7 +83,7 @@ static int crawl_script_args(lua_State *ls)
     return clua_stringtable(ls, crawl_state.script_args);
 }
 
-static const struct luaL_reg crawl_test_lib[] =
+static const struct luaL_Reg crawl_test_lib[] =
 {
     { "begin_test", crawl_begin_test },
     { "test_success", crawl_test_success },

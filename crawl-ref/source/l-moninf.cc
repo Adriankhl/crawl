@@ -704,7 +704,7 @@ LUAFN(moninf_get_name)
     return 1;
 }
 
-static const struct luaL_reg moninf_lib[] =
+static const struct luaL_Reg moninf_lib[] =
 {
     MIREG(type),
     MIREG(base_type),
@@ -788,7 +788,7 @@ LUAFN(mi_get_monster_at)
     return 1;
 }
 
-static const struct luaL_reg mon_lib[] =
+static const struct luaL_Reg mon_lib[] =
 {
     { "get_monster_at", mi_get_monster_at },
 

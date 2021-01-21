@@ -14,7 +14,7 @@
 // User-accessible file operations
 //
 
-static const struct luaL_reg file_clib[] =
+static const struct luaL_Reg file_clib[] =
 {
     { "write", CLua::file_write },
     { nullptr, nullptr },
@@ -200,7 +200,7 @@ LUAFN(_file_writefile)
     return 1;
 }
 
-static const struct luaL_reg file_dlib[] =
+static const struct luaL_Reg file_dlib[] =
 {
     { "marshall",   file_marshall },
     { "marshall_meta", file_marshall_meta },

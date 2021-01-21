@@ -675,7 +675,7 @@ static int mons_behaviour(lua_State *ls)
     return 0;
 }
 
-static const struct luaL_reg mons_lib[] =
+static const struct luaL_Reg mons_lib[] =
 {
     { "behaviour", mons_behaviour },
     { nullptr, nullptr }

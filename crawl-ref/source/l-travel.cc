@@ -142,7 +142,7 @@ LUAFN(l_set_waypoint)
     return 0;
 }
 
-static const struct luaL_reg travel_lib[] =
+static const struct luaL_Reg travel_lib[] =
 {
     { "set_exclude", l_set_exclude },
     { "del_exclude", l_del_exclude },

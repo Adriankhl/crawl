@@ -1768,7 +1768,7 @@ LUAFN(dgn_fill_grd_area)
 
 LUAWRAP(dgn_apply_tide, shoals_apply_tides(0, true))
 
-const struct luaL_reg dgn_dlib[] =
+const struct luaL_Reg dgn_dlib[] =
 {
 { "reset_level", _dgn_reset_level },
 
@@ -1924,7 +1924,7 @@ LUAFN(_vp_exits)
     return clua_gentable(ls, (*vp)->exits, clua_pushpoint);
 }
 
-static const luaL_reg dgn_vaultplacement_ops[] =
+static const luaL_Reg dgn_vaultplacement_ops[] =
 {
     { "pos", _vp_pos },
     { "size", _vp_size },

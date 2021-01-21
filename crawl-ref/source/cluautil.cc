@@ -46,7 +46,7 @@ void clua_push_dgn_event(lua_State *ls, const dgn_event *devent)
 
 void luaopen_setmeta(lua_State *ls,
                      const char *global,
-                     const luaL_reg *lua_lib,
+                     const luaL_Reg *lua_lib,
                      const char *meta)
 {
     luaL_newmetatable(ls, meta);
@@ -61,7 +61,7 @@ void luaopen_setmeta(lua_State *ls,
 }
 
 void clua_register_metatable(lua_State *ls, const char *tn,
-                             const luaL_reg *lr,
+                             const luaL_Reg *lr,
                              int (*gcfn)(lua_State *ls))
 {
     lua_stack_cleaner clean(ls);

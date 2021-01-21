@@ -1652,7 +1652,7 @@ static int item_get(lua_State *ls)
     return 0;
 }
 
-static const struct luaL_reg item_lib[] =
+static const struct luaL_Reg item_lib[] =
 {
     { "inventory",         l_item_inventory },
     { "letter_to_index",   l_item_letter_to_index },

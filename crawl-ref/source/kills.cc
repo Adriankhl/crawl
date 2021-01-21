@@ -960,7 +960,7 @@ static int kill_lualc_summary(lua_State *ls)
     return 1;
 }
 
-static const struct luaL_reg kill_lib[] =
+static const struct luaL_Reg kill_lib[] =
 {
     { "nkills",     kill_lualc_nkills },
     { "exp"   ,     kill_lualc_exp },

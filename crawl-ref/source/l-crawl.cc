@@ -824,7 +824,7 @@ static int crawl_regex_equals(lua_State *ls)
     lua_pushboolean(ls, **pattern == **arg);
     return 1;
 }
-static const luaL_reg crawl_regex_ops[] =
+static const luaL_Reg crawl_regex_ops[] =
 {
     { "matches",        crawl_regex_find },
     { "equals",         crawl_regex_equals },
@@ -908,7 +908,7 @@ static int crawl_messf_equals(lua_State *ls)
     return 1;
 }
 
-static const luaL_reg crawl_messf_ops[] =
+static const luaL_Reg crawl_messf_ops[] =
 {
     { "matches",        crawl_messf_matches },
     { "equals",         crawl_messf_equals },
@@ -1466,7 +1466,7 @@ static int crawl_version(lua_State *ls)
     return 1;
 }
 
-static const struct luaL_reg crawl_clib[] =
+static const struct luaL_Reg crawl_clib[] =
 {
     { "mpr",                crawl_mpr },
     { "formatted_mpr",      crawl_formatted_mpr },
@@ -1820,7 +1820,7 @@ LUAFN(crawl_rng_wrap)
 LUAWRAP(crawl_clear_message_store, clear_message_store())
 
 
-static const struct luaL_reg crawl_dlib[] =
+static const struct luaL_Reg crawl_dlib[] =
 {
 { "args", _crawl_args },
 { "mark_milestone", _crawl_milestone },

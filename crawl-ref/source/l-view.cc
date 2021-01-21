@@ -201,7 +201,7 @@ LUAFN(view_update_monsters)
     return 0;
 }
 
-static const struct luaL_reg view_lib[] =
+static const struct luaL_Reg view_lib[] =
 {
     { "feature_at", view_feature_at },
     { "cloud_at", view_cloud_at },

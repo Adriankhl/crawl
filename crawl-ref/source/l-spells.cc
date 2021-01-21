@@ -346,7 +346,7 @@ static int l_spells_cast(lua_State *ls)
     PLUARET(boolean, you.turn_is_over);
 }
 
-static const struct luaL_reg spells_clib[] =
+static const struct luaL_Reg spells_clib[] =
 {
     { "memorised"     , l_spells_memorised },
     { "letter"        , l_spells_letter },

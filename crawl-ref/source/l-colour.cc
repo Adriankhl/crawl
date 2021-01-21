@@ -83,7 +83,7 @@ LUAFN(l_add_colour)
     return 0;
 }
 
-static const struct luaL_reg colour_lib[] =
+static const struct luaL_Reg colour_lib[] =
 {
     { "add_colour", l_add_colour },
 

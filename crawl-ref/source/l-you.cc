@@ -1201,7 +1201,7 @@ LUAFN(you_quiver_allows_autofight)
     PLUARET(boolean, quiver::get_secondary_action()->allow_autofight());
 }
 
-static const struct luaL_reg you_clib[] =
+static const struct luaL_Reg you_clib[] =
 {
     { "turn_is_over", you_turn_is_over },
     { "turns"       , you_turns },
@@ -1603,7 +1603,7 @@ LUARET1(you_skill_points, number,
         you.skill_points[str_to_skill(luaL_checkstring(ls, 1))])
 LUARET1(you_zigs_completed, number, you.zigs_completed)
 
-static const struct luaL_reg you_dlib[] =
+static const struct luaL_Reg you_dlib[] =
 {
 { "hear_pos",           you_can_hear_pos },
 { "silenced",           you_silenced },
