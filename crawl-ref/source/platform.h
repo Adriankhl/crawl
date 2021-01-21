@@ -16,6 +16,8 @@
  *
  * TARGET_CPU_ARM
  *  ARM processor
+ * TARGET_CPU_ARM64
+ *  ARM 64-bit processor
  * TARGET_CPU_ALPHA
  *  DEC Alpha processor
  * TARGET_CPU_SPARC
@@ -77,6 +79,15 @@
 #if defined (TARGET_CPU_PPC)
 #define PROCESSOR_DETECTED
 #endif
+
+/* ARM 64-bit*/
+#if !defined (PROCESSOR_DETECTED)
+#if defined (__aarch64__)
+#define PROCESSOR_DETECTED
+#define TARGET_CPU_ARM64
+#endif
+#endif
+
 
 /* ARM */
 #if !defined (PROCESSOR_DETECTED)

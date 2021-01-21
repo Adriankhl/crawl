@@ -24,7 +24,7 @@
 
 // 64-bit luajit does not support custom allocators. Only checking
 // TARGET_CPU_X64 because luajit doesn't support other 64-bit archs.
-#if defined(USE_LUAJIT) && defined(TARGET_CPU_X64)
+#if defined(USE_LUAJIT) && (defined(TARGET_CPU_X64) || defined(TARGET_CPU_ARM64))
 #define NO_CUSTOM_ALLOCATOR
 #endif
 
